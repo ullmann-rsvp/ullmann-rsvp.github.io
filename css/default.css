@@ -1,0 +1,59 @@
+@import url(normalize.css);
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font: 300 10px / 1.6 "roboto", arial, sans-serif;
+}
+
+body {
+  background: url(../images/bg-top.svg) no-repeat center top,
+      url(../images/bg-bottom.svg) no-repeat center bottom;
+  box-sizing: border-box;
+  font-size: 22px;
+  font-size: 2.2rem;
+  min-height: 100vh;
+  padding: 20px 15px 200px;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    padding-top: 160px;
+  }
+}
+
+header,
+form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "roboto slab", georgia, serif;
+  font-weight: 400;
+  margin: 1.236em 0 .618em;
+}
+
+h1 {
+  background: url(../images/couple.svg) no-repeat center top;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1.4;
+  margin: 0 0 50px;
+  padding-top: 240px;
+}
+
+h1 em {
+  display: block;
+  font-size: 45px;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
