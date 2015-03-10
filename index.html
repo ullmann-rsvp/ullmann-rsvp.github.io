@@ -1,6 +1,7 @@
 <!doctype html>
 <meta charset="utf-8">
 <title>RSVP Manoja &amp; Anthony’s Wedding</title>
+
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Roboto:400,700" rel="stylesheet">
 <link href="css/default.css" rel="stylesheet">
 
@@ -13,11 +14,206 @@
 </header>
 
 <form action="https://docs.google.com/forms/d/13XIESBkpT1EfCPWg8miOsPkWQYCtYy2AygPvCfq7UWM/formResponse?embedded=true" method="post">
-  <p>Would you be able to join Manoja &amp; Anthony to celebrate their wedding?
-  <ul>
-    <li><label><input type="radio" name="entry.1446810226" value="Accept with pleasure"> Accept with pleasure</label>
-    <li><label><input type="radio" name="entry.1446810226" value="Decline with regret"> Decline with regret</label>
+  <ul class="f-lead">
+    <li>
+      <input type="radio" id="f-lead-yes" name="entry.1446810226" value="Accept with pleasure">
+      <label for="f-lead-yes">Accept with pleasure</label>
+    <li>
+      <input type="radio" id="f-lead-no" name="entry.1446810226" value="Decline with regret">
+      <label for="f-lead-no">Decline with regret</label>
   </ul>
 
-  <p><input type="submit" value="Submit">
+  <div class="guests" data-size="single">
+    <div class="guest" id="guest-1">
+      <h3>Guest 1</h3>
+      <ul>
+        <li>
+          <label for="f-g1-name">Name</label>
+          <input id="f-g1-name" name="entry.1067134244" type="text">
+        <li>
+          <label>Starter (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g1-starter-a" name="entry.1454360455" value="A">
+                <label for="f-g1-starter-a">A</label>
+              <li>
+                <input type="radio" id="f-g1-starter-b" name="entry.1454360455" value="B">
+                <label for="f-g1-starter-b">B</label>
+            </ul>
+        <li>
+          <label>Main (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g1-main-a" name="entry.1032745290" value="A">
+                <label for="f-g1-main-a">A</label>
+              <li>
+                <input type="radio" id="f-g1-main-b" name="entry.1032745290" value="B">
+                <label for="f-g1-main-b">B</label>
+              <li>
+                <input type="radio" id="f-g1-main-c" name="entry.1032745290" value="C">
+                <label for="f-g1-main-c">C</label>
+            </ul>
+        <li>
+          <label for="f-g1-dietry">Dietry/allergies</label>
+          <input id="f-g1-dietry" name="entry.1756998195" type="text">
+        <li>
+          <input type="checkbox" id="f-g1-pub" value="Yes" name="entry.170984613">
+          <label for="f-g1-pub">Subday pub (<a href="#pub">Detail</a>)</label>
+      </ul>
+    </div>
+    <div class="guest" id="guest-2">
+      <h3>Guest 2</h3>
+      <ul>
+        <li>
+          <label for="f-g2-name">Name</label>
+          <input id="f-g2-name" name="entry.1093530607" type="text">
+        <li>
+          <label>Starter (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g2-starter-a" name="entry.1689238880" value="A">
+                <label for="f-g2-starter-a">A</label>
+              <li>
+                <input type="radio" id="f-g2-starter-b" name="entry.1689238880" value="B">
+                <label for="f-g2-starter-b">B</label>
+            </ul>
+        <li>
+          <label>Main (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g2-main-a" name="entry.1959243099" value="A">
+                <label for="f-g2-main-a">A</label>
+              <li>
+                <input type="radio" id="f-g2-main-b" name="entry.1959243099" value="B">
+                <label for="f-g2-main-b">B</label>
+              <li>
+                <input type="radio" id="f-g2-main-c" name="entry.1959243099" value="C">
+                <label for="f-g2-main-c">C</label>
+            </ul>
+        <li>
+          <label for="f-g2-dietry">Dietry/allergies</label>
+          <input id="f-g2-dietry" name="entry.71774853" type="text">
+        <li>
+          <input type="checkbox" id="f-g2-pub" value="Yes" name="entry.1616314567">
+          <label for="f-g2-pub">Subday pub (<a href="#pub">Detail</a>)</label>
+      </ul>
+    </div>
+    <div class="guest" id="guest-3">
+      <h3>Guest 3</h3>
+      <ul>
+        <li>
+          <label for="f-g3-name">Name</label>
+          <input id="f-g3-name" name="entry.1067456969" type="text">
+        <li>
+          <label>Starter (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g3-starter-a" name="entry.202281580" value="A">
+                <label for="f-g3-starter-a">A</label>
+              <li>
+                <input type="radio" id="f-g3-starter-b" name="entry.202281580" value="B">
+                <label for="f-g3-starter-b">B</label>
+            </ul>
+        <li>
+          <label>Main (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g3-main-a" name="entry.422352963" value="A">
+                <label for="f-g3-main-a">A</label>
+              <li>
+                <input type="radio" id="f-g3-main-b" name="entry.422352963" value="B">
+                <label for="f-g3-main-b">B</label>
+              <li>
+                <input type="radio" id="f-g3-main-c" name="entry.422352963" value="C">
+                <label for="f-g3-main-c">C</label>
+            </ul>
+        <li>
+          <label for="f-g3-dietry">Dietry/allergies</label>
+          <input id="f-g3-dietry" name="entry.2046827429" type="text">
+        <li>
+          <input type="checkbox" id="f-g3-pub" value="Yes" name="entry.1643179552">
+          <label for="f-g3-pub">Subday pub (<a href="#pub">Detail</a>)</label>
+      </ul>
+    </div>
+    <div class="guest" id="guest-4">
+      <h3>Guest 4</h3>
+      <ul>
+        <li>
+          <label for="f-g4-name">Name</label>
+          <input id="f-g4-name" name="entry.671105114" type="text">
+        <li>
+          <label>Starter (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g4-starter-a" name="entry.574936610" value="A">
+                <label for="f-g4-starter-a">A</label>
+              <li>
+                <input type="radio" id="f-g4-starter-b" name="entry.574936610" value="B">
+                <label for="f-g4-starter-b">B</label>
+            </ul>
+        <li>
+          <label>Main (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g4-main-a" name="entry.609920539" value="A">
+                <label for="f-g4-main-a">A</label>
+              <li>
+                <input type="radio" id="f-g4-main-b" name="entry.609920539" value="B">
+                <label for="f-g4-main-b">B</label>
+              <li>
+                <input type="radio" id="f-g4-main-c" name="entry.609920539" value="C">
+                <label for="f-g4-main-c">C</label>
+            </ul>
+        <li>
+          <label for="f-g4-dietry">Dietry/allergies</label>
+          <input id="f-g4-dietry" name="entry.957716061" type="text">
+        <li>
+          <input type="checkbox" id="f-g4-pub" value="Yes" name="entry.203263706">
+          <label for="f-g4-pub">Subday pub (<a href="#pub">Detail</a>)</label>
+      </ul>
+    </div>
+    <div class="guest" id="guest-5">
+      <h3>Guest 5</h3>
+      <ul>
+        <li>
+          <label for="f-g5-name">Name</label>
+          <input id="f-g5-name" name="entry.851559796" type="text">
+        <li>
+          <label>Starter (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g5-starter-a" name="entry.1720358743" value="A">
+                <label for="f-g5-starter-a">A</label>
+              <li>
+                <input type="radio" id="f-g5-starter-b" name="entry.1720358743" value="B">
+                <label for="f-g5-starter-b">B</label>
+            </ul>
+        <li>
+          <label>Main (<a href="#menu">Menu</a>)</label>
+            <ul>
+              <li>
+                <input type="radio" id="f-g5-main-a" name="entry.1057650738" value="A">
+                <label for="f-g5-main-a">A</label>
+              <li>
+                <input type="radio" id="f-g5-main-b" name="entry.1057650738" value="B">
+                <label for="f-g5-main-b">B</label>
+              <li>
+                <input type="radio" id="f-g5-main-c" name="entry.1057650738" value="C">
+                <label for="f-g5-main-c">C</label>
+            </ul>
+        <li>
+          <label for="f-g5-dietry">Dietry/allergies</label>
+          <input id="f-g5-dietry" name="entry.1188329517" type="text">
+        <li>
+          <input type="checkbox" id="f-g5-pub" value="Yes" name="entry.37341677">
+          <label for="f-g5-pub">Subday pub (<a href="#pub">Detail</a>)</label>
+      </ul>
+    </div>
+  </div>
+
+  <p>
+    <button type="submit">Submit</button>
 </form>
+
+<script src="js/main.js"></script>
+
