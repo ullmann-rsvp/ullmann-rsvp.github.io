@@ -231,7 +231,13 @@ input[type=checkbox]:checked + label:before {
   padding: 20px;
   text-align: left;
   transition: .2s;
-  width: 60%;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .guest {
+    width: 60%;
+  }
 }
 
 .guest + .guest {
