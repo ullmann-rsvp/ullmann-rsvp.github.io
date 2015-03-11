@@ -32,7 +32,8 @@ body {
 }
 
 header,
-form {
+footer,
+main {
   margin: 0 auto;
   max-width: 600px;
 }
@@ -226,12 +227,34 @@ input[type=checkbox]:checked + label:before {
   background: #f4f4f4;
   border-radius: 10px;
   margin: auto;
+  overflow: hidden;
   padding: 20px;
   text-align: left;
+  transition: .2s;
   width: 60%;
 }
 
 .guest + .guest {
+  margin-top: 40px;
+}
+
+[data-size] .guest {
+  margin-top: 0;
+  max-height: 0;
+  padding: 0 20px;
+}
+
+[data-size=single] #guest-1,
+[data-size=couple] #guest-1,
+[data-size=couple] #guest-2,
+[data-size=family] .guest {
+  max-height: 800px;
+  padding: 20px;
+}
+
+[data-size=couple] #guest-1,
+[data-size=couple] #guest-2,
+[data-size=family] .guest {
   margin-top: 40px;
 }
 
@@ -241,6 +264,21 @@ input[type=checkbox]:checked + label:before {
 
 .guest > :last-child {
   margin-bottom: 0;
+}
+
+.guest h3 {
+  max-height: 200px;
+  overflow: hidden;
+  transition: .2s;
+}
+
+[data-size=single] #guest-1 h3 {
+  max-height: 0;
+  margin: 0;
+}
+
+[data-size=single] #guest-1 > ul {
+  margin-top: 0;
 }
 
 .guest ul {
@@ -264,4 +302,56 @@ input[type=checkbox]:checked + label:before {
 .guest > ul > li > label {
   display: block;
   margin-bottom: 5px;
+}
+
+.guest-button {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  display: block;
+  margin: 0 auto;
+  max-height: 0;
+  outline: 0;
+  padding: 0;
+  transition: .2s;
+}
+
+.guest-button:hover,
+.guest-button:focus,
+.guest-button:active {
+  text-decoration: underline;
+}
+
+[data-size=single] #guest-button-couple,
+[data-size=couple] #guest-button-family {
+  max-height: 100px;
+  margin: 20px auto;
+}
+
+footer {
+  border-top: 1px dashed #eee;
+  font-size: 16px;
+  margin-top: 80px;
+  padding-top: 40px;
+  text-align: left;
+}
+
+#menu:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.menu-type {
+  float: left;
+  padding: 0 20px 0 0;
+  width: 50%;
+}
+
+.menu-type:last-child {
+  padding: 0 0 0 20px;
+}
+
+.menu-type ol {
+  list-style: upper-alpha;
 }
