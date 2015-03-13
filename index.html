@@ -17,10 +17,10 @@
   <form action="https://docs.google.com/forms/d/13XIESBkpT1EfCPWg8miOsPkWQYCtYy2AygPvCfq7UWM/formResponse?embedded=true" method="post">
     <ul class="f-lead">
       <li>
-        <input type="radio" id="f-lead-yes" name="entry.1446810226" value="Accept with pleasure">
+        <input type="radio" id="f-lead-yes" name="entry.1446810226" value="Accept with pleasure" required>
         <label for="f-lead-yes">Accept with pleasure</label>
       <li>
-        <input type="radio" id="f-lead-no" name="entry.1446810226" value="Decline with regret">
+        <input type="radio" id="f-lead-no" name="entry.1446810226" value="Decline with regret" required>
         <label for="f-lead-no">Decline with regret</label>
     </ul>
 
@@ -30,7 +30,7 @@
         <ul>
           <li>
             <label for="f-g1-name">Name</label>
-            <input id="f-g1-name" name="entry.1067134244" type="text">
+            <input id="f-g1-name" name="entry.1067134244" type="text" required>
           <li>
             <label>Starter (<a href="#menu">Menu</a>)</label>
               <ul>
@@ -55,7 +55,7 @@
                   <label for="f-g1-main-c">C</label>
               </ul>
           <li>
-            <label for="f-g1-dietry">Dietry/allergies</label>
+            <label for="f-g1-dietry">Dietary/allergies</label>
             <input id="f-g1-dietry" name="entry.1756998195" type="text">
           <li>
             <input type="checkbox" id="f-g1-pub" value="Yes" name="entry.170984613">
@@ -66,7 +66,7 @@
       <button type="button" class="guest-button" id="guest-button-couple">Add your +1</button>
 
       <div class="guest" id="guest-2">
-        <h3>Guest 2</h3>
+        <h3>Guest 2 (Optional)</h3>
         <ul>
           <li>
             <label for="f-g2-name">Name</label>
@@ -95,7 +95,7 @@
                   <label for="f-g2-main-c">C</label>
               </ul>
           <li>
-            <label for="f-g2-dietry">Dietry/allergies</label>
+            <label for="f-g2-dietry">Dietary/allergies</label>
             <input id="f-g2-dietry" name="entry.71774853" type="text">
           <li>
             <input type="checkbox" id="f-g2-pub" value="Yes" name="entry.1616314567">
@@ -106,7 +106,7 @@
       <button type="button" class="guest-button" id="guest-button-family">Add more guests</button>
 
       <div class="guest" id="guest-3">
-        <h3>Guest 3</h3>
+        <h3>Guest 3 (Optional)</h3>
         <ul>
           <li>
             <label for="f-g3-name">Name</label>
@@ -135,7 +135,7 @@
                   <label for="f-g3-main-c">C</label>
               </ul>
           <li>
-            <label for="f-g3-dietry">Dietry/allergies</label>
+            <label for="f-g3-dietry">Dietary/allergies</label>
             <input id="f-g3-dietry" name="entry.2046827429" type="text">
           <li>
             <input type="checkbox" id="f-g3-pub" value="Yes" name="entry.1643179552">
@@ -143,7 +143,7 @@
         </ul>
       </div>
       <div class="guest" id="guest-4">
-        <h3>Guest 4</h3>
+        <h3>Guest 4 (Optional)</h3>
         <ul>
           <li>
             <label for="f-g4-name">Name</label>
@@ -172,7 +172,7 @@
                   <label for="f-g4-main-c">C</label>
               </ul>
           <li>
-            <label for="f-g4-dietry">Dietry/allergies</label>
+            <label for="f-g4-dietry">Dietary/allergies</label>
             <input id="f-g4-dietry" name="entry.957716061" type="text">
           <li>
             <input type="checkbox" id="f-g4-pub" value="Yes" name="entry.203263706">
@@ -180,7 +180,7 @@
         </ul>
       </div>
       <div class="guest" id="guest-5">
-        <h3>Guest 5</h3>
+        <h3>Guest 5 (Optional)</h3>
         <ul>
           <li>
             <label for="f-g5-name">Name</label>
@@ -209,7 +209,7 @@
                   <label for="f-g5-main-c">C</label>
               </ul>
           <li>
-            <label for="f-g5-dietry">Dietry/allergies</label>
+            <label for="f-g5-dietry">Dietary/allergies</label>
             <input id="f-g5-dietry" name="entry.1188329517" type="text">
           <li>
             <input type="checkbox" id="f-g5-pub" value="Yes" name="entry.37341677">
@@ -219,7 +219,7 @@
     </div>
 
     <p>
-      <button type="submit">Submit</button>
+      <button type="submit" id="submit">Submit</button>
   </form>
 </main>
 
