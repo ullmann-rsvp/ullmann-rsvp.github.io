@@ -231,7 +231,7 @@ input[type=checkbox]:checked + label:before {
 .f-lead input[type=checkbox] + label:after {
   height: 16px;
   left: 8px;
-  top: 15px;
+  top: 19px;
   width: 16px;
 }
 
