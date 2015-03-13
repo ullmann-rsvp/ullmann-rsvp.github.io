@@ -134,6 +134,7 @@ input[type=checkbox] {
 input[type=radio] + label,
 input[type=checkbox] + label {
   cursor: pointer;
+  display: inline-block;
   position: relative;
 }
 
@@ -166,6 +167,7 @@ input[type=checkbox] + label:after {
   height: 12px;
   left: 7px;
   position: absolute;
+  top: 12px;
   transform: scale(0);
   transition: .2s;
   width: 12px;
@@ -173,12 +175,10 @@ input[type=checkbox] + label:after {
 
 input[type=radio] + label:after {
   border-radius: 50%;
-  top: 6px;
 }
 
 input[type=checkbox] + label:after {
   border-radius: 2px;
-  top: 12px;
 }
 
 input[type=radio]:checked + label:after,
