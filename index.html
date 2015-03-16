@@ -17,22 +17,22 @@
   <form action="https://docs.google.com/forms/d/13XIESBkpT1EfCPWg8miOsPkWQYCtYy2AygPvCfq7UWM/formResponse?embedded=true" method="post">
     <ul class="f-lead">
       <li>
-        <input type="radio" id="f-lead-yes" name="entry.1446810226" value="Accept with pleasure" required>
+        <input type="radio" id="f-lead-yes" name="entry.1446810226" value="Accept with pleasure" irequired>
         <label for="f-lead-yes">Accept with pleasure</label>
       <li>
-        <input type="radio" id="f-lead-no" name="entry.1446810226" value="Decline with regret" required>
+        <input type="radio" id="f-lead-no" name="entry.1446810226" value="Decline with regret" irequired>
         <label for="f-lead-no">Decline with regret</label>
     </ul>
 
-    <div class="guests" id="guests" data-size="single">
+    <div class="guests" id="guests" data-size="1">
       <div class="guest" id="guest-1">
         <h3>Guest 1</h3>
         <ul>
           <li>
             <label for="f-g1-name">Name</label>
-            <input id="f-g1-name" name="entry.1067134244" type="text" required>
+            <input id="f-g1-name" name="entry.1067134244" type="text" irequired>
           <li>
-            <label>Starter (<a href="#menu">Menu</a>)</label>
+            <label>Starter<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g1-starter-a" name="entry.1454360455" value="A">
@@ -42,7 +42,7 @@
                   <label for="f-g1-starter-b">B</label>
               </ul>
           <li>
-            <label>Main (<a href="#menu">Menu</a>)</label>
+            <label>Main<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g1-main-a" name="entry.1032745290" value="A">
@@ -59,20 +59,18 @@
             <input id="f-g1-dietry" name="entry.1756998195" type="text">
           <li>
             <input type="checkbox" id="f-g1-pub" value="Yes" name="entry.170984613">
-            <label for="f-g1-pub">Sunday pub (<a href="#pub">Detail</a>)</label>
+            <label for="f-g1-pub">Sunday pub<span class="more"> (<a href="#pub">Detail</a>)</span></label>
         </ul>
       </div>
 
-      <button type="button" class="guest-button" id="guest-button-couple">Add your +1</button>
-
       <div class="guest" id="guest-2">
-        <h3>Guest 2 (Optional)</h3>
+        <h3>Guest 2</h3>
         <ul>
           <li>
             <label for="f-g2-name">Name</label>
             <input id="f-g2-name" name="entry.1093530607" type="text">
           <li>
-            <label>Starter (<a href="#menu">Menu</a>)</label>
+            <label>Starter<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g2-starter-a" name="entry.1689238880" value="A">
@@ -82,7 +80,7 @@
                   <label for="f-g2-starter-b">B</label>
               </ul>
           <li>
-            <label>Main (<a href="#menu">Menu</a>)</label>
+            <label>Main<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g2-main-a" name="entry.1959243099" value="A">
@@ -99,20 +97,18 @@
             <input id="f-g2-dietry" name="entry.71774853" type="text">
           <li>
             <input type="checkbox" id="f-g2-pub" value="Yes" name="entry.1616314567">
-            <label for="f-g2-pub">Sunday pub (<a href="#pub">Detail</a>)</label>
+            <label for="f-g2-pub">Sunday pub<span class="more"> (<a href="#pub">Detail</a>)</span></label>
         </ul>
       </div>
 
-      <button type="button" class="guest-button" id="guest-button-family">Add more guests</button>
-
       <div class="guest" id="guest-3">
-        <h3>Guest 3 (Optional)</h3>
+        <h3>Guest 3</h3>
         <ul>
           <li>
             <label for="f-g3-name">Name</label>
             <input id="f-g3-name" name="entry.1067456969" type="text">
           <li>
-            <label>Starter (<a href="#menu">Menu</a>)</label>
+            <label>Starter<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g3-starter-a" name="entry.202281580" value="A">
@@ -122,7 +118,7 @@
                   <label for="f-g3-starter-b">B</label>
               </ul>
           <li>
-            <label>Main (<a href="#menu">Menu</a>)</label>
+            <label>Main<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g3-main-a" name="entry.422352963" value="A">
@@ -139,17 +135,17 @@
             <input id="f-g3-dietry" name="entry.2046827429" type="text">
           <li>
             <input type="checkbox" id="f-g3-pub" value="Yes" name="entry.1643179552">
-            <label for="f-g3-pub">Sunday pub (<a href="#pub">Detail</a>)</label>
+            <label for="f-g3-pub">Sunday pub<span class="more"> (<a href="#pub">Detail</a>)</span></label>
         </ul>
       </div>
       <div class="guest" id="guest-4">
-        <h3>Guest 4 (Optional)</h3>
+        <h3>Guest 4</h3>
         <ul>
           <li>
             <label for="f-g4-name">Name</label>
             <input id="f-g4-name" name="entry.671105114" type="text">
           <li>
-            <label>Starter (<a href="#menu">Menu</a>)</label>
+            <label>Starter<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g4-starter-a" name="entry.574936610" value="A">
@@ -159,7 +155,7 @@
                   <label for="f-g4-starter-b">B</label>
               </ul>
           <li>
-            <label>Main (<a href="#menu">Menu</a>)</label>
+            <label>Main<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g4-main-a" name="entry.609920539" value="A">
@@ -176,17 +172,17 @@
             <input id="f-g4-dietry" name="entry.957716061" type="text">
           <li>
             <input type="checkbox" id="f-g4-pub" value="Yes" name="entry.203263706">
-            <label for="f-g4-pub">Sunday pub (<a href="#pub">Detail</a>)</label>
+            <label for="f-g4-pub">Sunday pub<span class="more"> (<a href="#pub">Detail</a>)</span></label>
         </ul>
       </div>
       <div class="guest" id="guest-5">
-        <h3>Guest 5 (Optional)</h3>
+        <h3>Guest 5</h3>
         <ul>
           <li>
             <label for="f-g5-name">Name</label>
             <input id="f-g5-name" name="entry.851559796" type="text">
           <li>
-            <label>Starter (<a href="#menu">Menu</a>)</label>
+            <label>Starter<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g5-starter-a" name="entry.1720358743" value="A">
@@ -196,7 +192,7 @@
                   <label for="f-g5-starter-b">B</label>
               </ul>
           <li>
-            <label>Main (<a href="#menu">Menu</a>)</label>
+            <label>Main<span class="more"> (<a href="#menu">Menu</a>)</span></label>
               <ul>
                 <li>
                   <input type="radio" id="f-g5-main-a" name="entry.1057650738" value="A">
@@ -213,9 +209,14 @@
             <input id="f-g5-dietry" name="entry.1188329517" type="text">
           <li>
             <input type="checkbox" id="f-g5-pub" value="Yes" name="entry.37341677">
-            <label for="f-g5-pub">Sunday pub (<a href="#pub">Detail</a>)</label>
+            <label for="f-g5-pub">Sunday pub<span class="more"> (<a href="#pub">Detail</a>)</span></label>
         </ul>
       </div>
+
+      <ul class="guest-actions">
+        <li><button type="button" class="guest-button" id="guest-button-add">Add another guest</button>
+        <li><button type="button" class="guest-button" id="guest-button-remove">Remove this guest</button>
+      </ul>
     </div>
 
     <p>
@@ -229,26 +230,29 @@
     <div class="menu-type">
       <h4>Starter</h4>
       <ol>
-        <li>Beetroot, goats cheese and spring onion tart
-        <li>Pressed ham hock terrine, mixed leaves and pickles
+        <li id="menu-starter-a">Beetroot, goats cheese and spring onion tart
+        <li id="menu-starter-b">Pressed ham hock terrine, mixed leaves and pickles
       </ol>
     </div>
     <div class="menu-type">
       <h4>Main</h4>
       <ol>
-        <li>Chicken breast, thyme potato bake, fine beans, hazelnut pesto
-        <li>Shin of beef, smoked cheddar mash, spinach and capers
-        <li>Chick Pea, Spinach and Paneer Curry, Spring Onion Bahji and Yoghurt
+        <li id="menu-main-a">Chicken breast, thyme potato bake, fine beans, hazelnut pesto
+        <li id="menu-main-b">Shin of beef, smoked cheddar mash, spinach and capers
+        <li id="menu-main-c">Chick Pea, Spinach and Paneer Curry, Spring Onion Bahji and Yoghurt
       </ol>
     </div>
     <p>Children under the age of 13 will have a fixed menu.
   </article>
   <article id="pub">
     <h3>Sunday pub</h3>
-    <p>We will be enjoying our first day as a married couple on Sunday, June 28th from 1pm onwards hanging out at The Old Red Lion Inn (<a href="http://www.theoldredlion.co.uk">www.theoldredlion.co.uk</a> – Linton Road Cambridge CB21 4QF).
-    <p>If you would like to join us, you are more than welcome. Please let us know in the RSVP card if you’ll be there to have a few drinks with us. If you would also like to have lunch there, please call them on +44 1223 892909 to reserve a table.
+    <div id="pub-detail">
+      <p>We will be enjoying our first day as a married couple on Sunday, June 28th from 1pm onwards hanging out at The Old Red Lion Inn (<a href="http://www.theoldredlion.co.uk">www.theoldredlion.co.uk</a> – Linton Road Cambridge CB21 4QF).
+      <p>If you would also like to have lunch there, please call them on +44 1223 892909 to reserve a table.
+    </div>
   </article>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/main.js"></script>
 

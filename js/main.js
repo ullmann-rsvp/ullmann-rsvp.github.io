@@ -1,41 +1,101 @@
 (function() {
 
-  var mainEl = document.getElementsByTagName('main')[0];
-  var acceptedEl = document.getElementById('f-lead-yes');
-  var rejectedEl = document.getElementById('f-lead-no');
-  var formEl = document.getElementsByTagName('form')[0];
-  var guestsEl = document.getElementById('guests');
-  var guestButtonCouple = document.getElementById('guest-button-couple');
-  var guestButtonFamily = document.getElementById('guest-button-family');
-  var guest1NameEl = document.getElementById('f-g1-name');
-  var submitEl = document.getElementById('submit');
+  var mainEl = $('main').first();
+  var acceptedEl = $('#f-lead-yes');
+  var rejectedEl = $('#f-lead-no');
+  var formEl = $('form').first();
+  var guestsEl = $('#guests');
+  var submitEl = $('#submit');
 
-  formEl.onsubmit = function() {
-    if ((!acceptedEl.checked && !rejectedEl.checked) || !guest1NameEl.value) {
-      alert('Please either accept or reject this invitation, and tell us your' +
-        ' name');
-      return false;
+  $('main form').on('submit', function(evt) {
+    if (!acceptedEl.prop('checked') && !rejectedEl.prop('checked')) {
+      alert('Please either accept or reject our invitation.');
+      evt.preventDefault();
+      return;
     }
-  };
 
-  acceptedEl.onchange = function() {
+    if (!$('#f-g1-name').val()) {
+      alert('Please tell us your name.');
+      evt.preventDefault();
+      return;
+    }
+
+    $('.guest').slice(0, guestsEl.attr('data-size')).each(function(index, el) {
+      var accepted = acceptedEl.prop('checked');
+      var guestEl = $(el);
+      var nameVal = $('input[id$="-name"]', guestEl).first().val();
+      var hasStarterVal = !!$('input[id*="starter"]:checked', guestEl).length;
+      var hasMainVal = !!$('input[id*="main"]:checked', guestEl).length;
+
+      if (accepted && !nameVal) {
+        alert('Please tell us guest ' + (index + 1) + '’s name.');
+        evt.preventDefault();
+        return false;
+      }
+
+      if (accepted && (!hasStarterVal || !hasMainVal)) {
+        var guestName = index === 0 ? 'yourself' : nameVal;
+
+        alert('Please choose food preference for ' + guestName + '.');
+        evt.preventDefault();
+        return false;
+      }
+    });
+  });
+
+  acceptedEl.on('change', function() {
     if (this.checked) {
-      mainEl.setAttribute('data-accepted', 'true');
+      mainEl.attr('data-accepted', 'true');
     }
-  };
+  });
 
-  rejectedEl.onchange = function() {
+  rejectedEl.on('change', function() {
     if (this.checked) {
-      mainEl.setAttribute('data-accepted', 'false');
+      mainEl.attr('data-accepted', 'false');
     }
-  };
+  });
 
-  guestButtonCouple.onclick = function() {
-    guestsEl.setAttribute('data-size', 'couple');
-  };
+  $('#guest-button-add').on('click', function() {
+    var size = parseInt(guestsEl.attr('data-size'), 10);
 
-  guestButtonFamily.onclick = function() {
-    guestsEl.setAttribute('data-size', 'family');
-  };
+    if (size < 5) {
+      guestsEl.attr('data-size', size + 1);
+    }
+  });
 
+  $('#guest-button-remove').on('click', function() {
+    var lastGuest = parseInt(guestsEl.attr('data-size'), 10);
+
+    if (!confirm('Are you sure you want to remove guest ' + lastGuest + '?')) {
+      return;
+    }
+
+    var guestEl = $('#guest-' + lastGuest);
+
+    $('input', guestEl).val('').prop('checked', false);
+    guestsEl.attr('data-size', (lastGuest - 1));
+  });
+
+  enhanceReading();
+
+  function enhanceReading() {
+    var menuItems = [
+      'starter-a',
+      'starter-b',
+      'main-a',
+      'main-b',
+      'main-c'
+    ];
+
+    for (var i = 0, menuItem; menuItem = menuItems[i]; i++) {
+      var text = $('#menu-' + menuItem).text();
+
+      $('label[for$="' + menuItem + '"]', formEl).text(text);
+    }
+
+    var pubText = $('#pub-detail').html();
+    $('label[for$="-pub"]', formEl).after(pubText);
+
+    $('body').addClass('enhanced');
+  }
 })();
