@@ -234,7 +234,7 @@ input[type=checkbox]:checked + label:before {
   margin-top: 40px;
 }
 
-[data-size] .guest {
+.js [data-size] .guest {
   margin-top: 0;
   max-height: 0;
   padding: 0 20px;
@@ -286,16 +286,16 @@ input[type=checkbox]:checked + label:before {
   transition: .2s;
 }
 
-main:not([data-accepted]) #guest-1 h3,
-main[data-accepted=false] #guest-1 h3,
-main[data-accepted=true] [data-size="1"] #guest-1 h3 {
+.js main:not([data-accepted]) #guest-1 h3,
+.js main[data-accepted=false] #guest-1 h3,
+.js main[data-accepted=true] [data-size="1"] #guest-1 h3 {
   max-height: 0;
   margin: 0;
 }
 
-main:not([data-accepted]) #guest-1 > ul,
-main[data-accepted=false] #guest-1 > ul,
-main[data-accepted=true] [data-size="1"] #guest-1 > ul {
+.js main:not([data-accepted]) #guest-1 > ul,
+.js main[data-accepted=false] #guest-1 > ul,
+.js main[data-accepted=true] [data-size="1"] #guest-1 > ul {
   margin-top: 0;
 }
 
@@ -336,14 +336,14 @@ main[data-accepted=true] [data-size="1"] #guest-1 > ul {
   margin-bottom: 5px;
 }
 
-#guest-1 > ul > li + li {
+.js #guest-1 > ul > li + li {
   margin: 0;
   max-height: 0;
   overflow: hidden;
   transition: .2s;
 }
 
-[data-accepted=true] #guest-1 > ul > li + li {
+.js [data-accepted=true] #guest-1 > ul > li + li {
   margin: 40px 0 0;
   max-height: 500px;
 }
