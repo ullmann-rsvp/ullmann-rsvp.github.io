@@ -55,6 +55,13 @@
     }
   });
 
+  guestsEl.append('<ul class="guest-actions">' +
+    '<li><button type="button" class="guest-button" id="guest-button-add">' +
+      'Add another guest</button>' +
+    '<li><button type="button" class="guest-button" id="guest-button-remove">' +
+      'Remove this guest</button>' +
+    '</ul>');
+
   $('#guest-button-add').on('click', function() {
     var size = parseInt(guestsEl.attr('data-size'), 10);
 
